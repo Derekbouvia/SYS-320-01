@@ -6,14 +6,11 @@
 # Create a private key
 p=""$(wg genkey)"
 
-
 # Create a public key
 pub="$(echo ${p} | wg pubkey)"
 
-
 # Set the addresses
 address="10.254.132.0/24,172.16.28.0/24"
-
 
 # Set the Listen port
 lport="4282"
