@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Storyline: Script to create a wireguard server
+# Storyline: Script to create a wireguard server
 
 
 # Create a private key
