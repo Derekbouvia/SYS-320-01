@@ -67,3 +67,18 @@ then
         bash peer.bash ${t_user}
 
 fi
+
+# Check for user
+
+if [[ ${u_check} ]]
+
+then
+
+    echo "Checking..."
+    if [[ -n $(awk "/# ${t_user} begin/,/# ${t_user} end/" wg0.conf) ]]
+    then
+        echo "${t_user} exists in wg0.conf"
+    else
+        echo "${t_user} does not exist in wg0.conf"
+    fi
+fi
