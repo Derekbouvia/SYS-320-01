@@ -1,3 +1,4 @@
+# Storyline: Parse text files for compromised IP addresses and create firewall rulesets to block inbound connections from them
 # Array of websites containing threat intell
 $drop_urls = @('https://rules.emergingthreats.net/blockrules/emerging-botcc.rules','https://rules.emergingthreats.net/blockrules/compromised-ips.txt')
 
